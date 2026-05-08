@@ -69,7 +69,7 @@ def centroid_pixel(hm):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str, default='configs/train_config.yaml')
-    parser.add_argument('--checkpoint', type=str, default='/root/bev_container_alignment/checkpoints/best.pth')
+    parser.add_argument('--checkpoint', type=str, default='checkpoints/best.pth')
     parser.add_argument('--split', type=str, default='test')
     parser.add_argument('--max_samples', type=int, default=10)
     parser.add_argument('--print_samples', action='store_true')
