@@ -78,15 +78,13 @@ Outputs are written to `test_results/`, including:
 - `bias_curve.png`
 - `bev_heatmap.png`
 
-## Results (Template)
+## Results
 
-Replace with your real numbers before interviews:
+Latest local evaluation (`test_results/metrics.json`):
 
-| Experiment | Mean X Error (cm) | Mean Y Error (cm) | Success Rate (%) | Notes |
-|---|---:|---:|---:|---|
-| Baseline config | TBD | TBD | TBD | Initial setup |
-| Pair mapping optimization | TBD | TBD | TBD | Improved mapping consistency |
-| Final model | TBD | TBD | TBD | Best trade-off |
+| Experiment | Mean Error (mm) | Std (mm) | Success@10mm (%) | Samples | Notes |
+|---|---:|---:|---:|---:|---|
+| Pairmap18 test run | 30.27 | 2.51 | 0.0 | 3 | Small sample size; for pipeline validation |
 
 ## Interview Talking Points
 
