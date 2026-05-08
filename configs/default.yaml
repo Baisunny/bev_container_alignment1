@@ -1,0 +1,21 @@
+camera_params_path: 'data/raw/camera_calib.yaml.txt'
+
+bev:
+  x_range: [-750, 750]
+  y_range: [0, 600]
+  resolution: 2.5
+
+train:
+  lr: 1.0e-4
+  epochs: 100
+  batch_size: 16
+
+model:
+  backbone: 'resnet34'
+  bev_h: 240
+  bev_w: 600
+  num_queries: 100
+
+loss:
+  lambda_container: 1.0
+  lambda_spreader: 1.0

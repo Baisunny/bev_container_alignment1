@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large artifacts / outputs
+work_dirs/
+test_results/
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.engine
+
+# Data (keep only metadata/scripts in repo)
+data/raw/
+data/processed/
+
+# Optional local backups
+*_backup_*/
+*_stale_*/

@@ -1,0 +1,51 @@
+data_root: "data/processed"
+
+data:
+  strict_label_loading: true
+
+bev:
+  x_range: [-750, 750]
+  y_range: [0, 600]
+  resolution: 2.5
+  bev_h: 60
+  bev_w: 150
+  norm_factor: 1.0
+
+model:
+  backbone: "resnet50"
+  pretrained: true
+  freeze_backbone: true
+  embed_dim: 64
+  num_heads: 2
+  num_layers: 0
+  pretrained_path: "checkpoints/pretrained/resnet50-0676ba61.pth"
+
+train:
+  lr: 3.0e-4
+  weight_decay: 0.01
+  batch_size: 1
+  epochs: 60
+  num_workers: 0
+  lr_scheduler: "cosine"
+  save_every: 5
+  patience: 20
+
+loss:
+  lambda_container: 1.0
+  lambda_spreader: 1.0
+
+splits:
+  train_samples:
+    - sample_0000
+    - sample_0001
+    - sample_0002
+    - sample_0003
+    - sample_0004
+    - sample_0005
+    - sample_0006
+  val_samples:
+    - sample_0007
+  test_samples:
+    - sample_0008
+    - sample_0009
+    - sample_0010

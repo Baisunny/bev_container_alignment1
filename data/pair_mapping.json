@@ -1,0 +1,131 @@
+{
+  "description": "Auto mapping from annotated files only with max_gap=2000000.",
+  "pairs": [
+    {
+      "front": "Color_1766671099250.bmp",
+      "rear": "Color_1766670663164.bmp",
+      "gap": 436086,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766672389173.bmp",
+      "rear": "Color_1766670656911.bmp",
+      "gap": 1732262,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766672452908.bmp",
+      "rear": "Color_1766670634945.bmp",
+      "gap": 1817963,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766725985570.bmp",
+      "rear": "Color_1766727401729.bmp",
+      "gap": 1416159,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726015261.bmp",
+      "rear": "Color_1766727409306.bmp",
+      "gap": 1394045,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726033455.bmp",
+      "rear": "Color_1766727417054.bmp",
+      "gap": 1383599,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726055426.bmp",
+      "rear": "Color_1766727424696.bmp",
+      "gap": 1369270,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726065534.bmp",
+      "rear": "Color_1766727434116.bmp",
+      "gap": 1368582,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726074344.bmp",
+      "rear": "Color_1766727467802.bmp",
+      "gap": 1393458,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726083158.bmp",
+      "rear": "Color_1766727485783.bmp",
+      "gap": 1402625,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726157942.bmp",
+      "rear": "Color_1766727508294.bmp",
+      "gap": 1350352,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726179364.bmp",
+      "rear": "Color_1766727515814.bmp",
+      "gap": 1336450,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726193382.bmp",
+      "rear": "Color_1766727631893.bmp",
+      "gap": 1438511,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726199193.bmp",
+      "rear": "Color_1766727642494.bmp",
+      "gap": 1443301,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726207987.bmp",
+      "rear": "Color_1766727653867.bmp",
+      "gap": 1445880,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726214953.bmp",
+      "rear": "Color_1766727661444.bmp",
+      "gap": 1446491,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726489269.bmp",
+      "rear": "Color_1766727685156.bmp",
+      "gap": 1195887,
+      "front_kp": 4,
+      "rear_kp": 4
+    },
+    {
+      "front": "Color_1766726497169.bmp",
+      "rear": "Color_1766727710199.bmp",
+      "gap": 1213030,
+      "front_kp": 4,
+      "rear_kp": 4
+    }
+  ]
+}
