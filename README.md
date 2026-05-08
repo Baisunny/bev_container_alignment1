@@ -54,7 +54,12 @@ This repo ignores large artifacts by default (`data/raw`, `data/processed`, `wor
 
 If you need to share weights/data, use external storage (OSS/S3/Drive) and add links here.
 
-## 6. Push to GitHub
+## 6. Public Desensitization Notice
+
+For public sharing, real sample images, labels, and private mapping files are removed from this repository.
+Please place your own data under `data/raw/` and regenerate processed samples locally.
+
+## 7. Push to GitHub
 
 ```bash
 cd /home/bev_container_alignment1

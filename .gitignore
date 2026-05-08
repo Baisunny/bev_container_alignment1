@@ -40,3 +40,8 @@ runs/
 wandb/
 logs/
 *.log
+
+# Desensitized public release
+data/processed_before_maxgap_20260507/
+data/annotations/_annotations.coco.json
+data/pair_mapping.json
