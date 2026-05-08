@@ -34,3 +34,9 @@ data/processed/
 # Optional local backups
 *_backup_*/
 *_stale_*/
+
+# Training/runtime caches
+runs/
+wandb/
+logs/
+*.log
