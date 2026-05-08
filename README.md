@@ -1,19 +1,53 @@
-# bev_container_alignment1
+# BEV Container Alignment
 
-BEV container alignment training/inference project.
+A computer-vision project for container alignment using BEV perception, covering data preparation, model training, evaluation, and inference utilities.
 
-## 1. Environment
+## Project Summary
+
+This project estimates container alignment offsets (for example, X/Y deviation) from front/rear camera views and outputs quantitative error metrics and visual diagnostics.
+
+## What I Built
+
+- Built an end-to-end BEV training and inference pipeline with PyTorch.
+- Implemented data preprocessing and BEV label generation scripts.
+- Maintained configuration-driven experiments for fast ablation and reproducibility.
+- Added evaluation and visualization outputs (metrics, bias curves, heatmaps) for error analysis.
+- Organized repository for public sharing: artifact isolation, ignore rules, and data desensitization.
+
+## Tech Stack
+
+- Python
+- PyTorch
+- NumPy / Matplotlib
+- YAML-based config system
+
+## Repository Structure
+
+```text
+configs/      Training and experiment configs
+data/         Dataset loader and public data notes
+models/       Network modules
+scripts/      Data generation and utility scripts
+utils/        Training/eval helper functions
+train.py      Training entry
+test.py       Evaluation entry
+eval.py       Evaluation utilities
+visualize.py  Visualization entry
+```
+
+## Reproducibility
+
+### 1) Environment
 
 ```bash
-cd /home/bev_container_alignment1
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 2. Data Preparation
+### 2) Prepare Data
 
-Raw data is expected under:
+Expected raw layout:
 
 - `data/raw/images/front`
 - `data/raw/images/rear`
@@ -26,54 +60,49 @@ Generate processed samples:
 python3 scripts/generate_bev_labels.py
 ```
 
-## 3. Train
-
-Example training command:
+### 3) Train
 
 ```bash
 python3 train.py --config configs/train_config_pairmap18.yaml --work_dir work_dirs/retrain_pairmap18
 ```
 
-## 4. Test
-
-Example test command:
+### 4) Test
 
 ```bash
-python3 test.py --config configs/train_config_pairmap18.yaml --checkpoint work_dirs/retrain_pairmap18/checkpoints/best.pth --split test --max_samples 10 --print_samples
+python3 test.py --config configs/train_config_pairmap18.yaml --checkpoint checkpoints/best.pth --split test --max_samples 10 --print_samples
 ```
 
-Test outputs are written to `test_results/`, including:
+Outputs are written to `test_results/`, including:
 
 - `metrics.json`
 - `bias_curve.png`
 - `bev_heatmap.png`
 
-## 5. Notes About Repository Size
+## Results (Template)
 
-This repo ignores large artifacts by default (`data/raw`, `data/processed`, `work_dirs`, `checkpoints`, `*.pth`, etc.).
+Replace with your real numbers before interviews:
 
-If you need to share weights/data, use external storage (OSS/S3/Drive) and add links here.
+| Experiment | Mean X Error (cm) | Mean Y Error (cm) | Success Rate (%) | Notes |
+|---|---:|---:|---:|---|
+| Baseline config | TBD | TBD | TBD | Initial setup |
+| Pair mapping optimization | TBD | TBD | TBD | Improved mapping consistency |
+| Final model | TBD | TBD | TBD | Best trade-off |
 
-## 6. Public Desensitization Notice
+## Interview Talking Points
 
-For public sharing, real sample images, labels, and private mapping files are removed from this repository.
-Please place your own data under `data/raw/` and regenerate processed samples locally.
+- Why BEV representation is suitable for alignment tasks.
+- How dataset construction and calibration quality affect offset error.
+- How you diagnosed model bias using curve/heatmap outputs.
+- Key engineering decisions that improved reproducibility and maintainability.
 
-## 7. Push to GitHub
+## Public Data Notice
 
-```bash
-cd /home/bev_container_alignment1
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/<your_name>/<repo>.git
-git push -u origin main
-```
+This is a desensitized public version.
 
-If the remote already exists:
+Removed from version control:
 
-```bash
-git remote set-url origin https://github.com/<your_name>/<repo>.git
-git push -u origin main
-```
+- Real processed samples
+- Private annotation/mapping files
+- Training artifacts and model checkpoints
+
+Use your own data locally under `data/raw/` and regenerate processed samples.
